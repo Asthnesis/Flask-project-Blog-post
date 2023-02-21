@@ -1,0 +1,8 @@
+<!-- This part will display the a single post in addition to displaying the contents of a post -->
+
+{% extends 'base.html' %}
+{% block content %}
+    <h2>{% block title %} {{ post['title'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{post['created']}}</span>
+    <p>{{post['content']}}</p>
+{% endblock %}
